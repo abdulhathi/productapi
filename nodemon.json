@@ -1,0 +1,6 @@
+{
+    "env": {
+        "Mongo_Atlas_ShoppingKart" : "shoppingkart",
+        "baseURL": "http://localhost:2000/"
+    }
+}
