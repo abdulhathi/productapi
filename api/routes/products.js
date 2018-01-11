@@ -30,7 +30,7 @@ router.post('/', upload.single('productImage'), (req, res, next) => {
         _id: new mongoose.Types.ObjectId(),
         Name: req.body.Name,
         Price: req.body.Price,
-        ProductImage: "http://localhost:2000/" + req.file.path
+        ProductImage: req.file.path
     })
     //console.log(req.url); console.log(req.baseUrl); console.log(req.originalUrl);
     product.save().then(result => { 
