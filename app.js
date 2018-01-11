@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-mongoose.connect("mongodb://shoppingkart:"+ process.env.Mongo_Atlas_ShoppingKart +"@shopping-kart-shard-00-00-oj115.mongodb.net:27017,shopping-kart-shard-00-01-oj115.mongodb.net:27017,shopping-kart-shard-00-02-oj115.mongodb.net:27017/test?ssl=true&replicaSet=Shopping-Kart-shard-0&authSource=admin"
+mongoose.connect("mongodb://shoppingkart:shoppingkart@shopping-kart-shard-00-00-oj115.mongodb.net:27017,shopping-kart-shard-00-01-oj115.mongodb.net:27017,shopping-kart-shard-00-02-oj115.mongodb.net:27017/test?ssl=true&replicaSet=Shopping-Kart-shard-0&authSource=admin"
 );
 
 app.use(morgan('dev'));
